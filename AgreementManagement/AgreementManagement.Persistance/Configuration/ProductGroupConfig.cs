@@ -17,6 +17,30 @@ namespace AgreementManagement.Persistance.Configuration
 				.HasMaxLength(100);
 
 			builder.HasIndex(i => i.Code).IsUnique();
+
+			#region SeedData
+			builder.HasData(
+				new ProductGroup
+				{
+					Id = 1,
+					Code = "Code_1",
+					IsActive = true,
+					Description = "Undrstandable description"
+				},
+				new ProductGroup
+				{
+					Id = 2,
+					Code = "Code_2",
+					IsActive = true,
+					Description = "Some group"
+				}, new ProductGroup
+				{
+					Id = 3,
+					Code = "Code_3",
+					IsActive = false,
+					Description = "Any Description"
+				});
+			#endregion
 		}
 	}
 }

@@ -1,4 +1,5 @@
-﻿using AgreementManagement.Domain.Entities;
+﻿using AgreementManagement.Common;
+using AgreementManagement.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 

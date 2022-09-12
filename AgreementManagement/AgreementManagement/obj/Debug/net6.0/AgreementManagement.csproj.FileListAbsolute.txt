@@ -89,3 +89,4 @@ C:\Users\van_k\source\repos\AgreementManagement_Test\AgreementManagement\Agreeme
 C:\Users\van_k\source\repos\AgreementManagement_Test\AgreementManagement\AgreementManagement\bin\Debug\net6.0\AgreementManagement.Persistance.pdb
 C:\Users\van_k\source\repos\AgreementManagement_Test\AgreementManagement\AgreementManagement\bin\Debug\net6.0\AgreementManagement.Common.pdb
 C:\Users\van_k\source\repos\AgreementManagement_Test\AgreementManagement\AgreementManagement\bin\Debug\net6.0\AgreementManagement.Domain.pdb
+C:\Users\van_k\source\repos\AgreementManagement_Test\AgreementManagement\AgreementManagement\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll

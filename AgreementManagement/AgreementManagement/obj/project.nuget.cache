@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "mNeehOLt+U7OY36mywsSoOzziv4NmC7gwwMBTAz07YZ3Za/SLPo3rWvri6QQWXr6cy6Y+Kr6EasdAXCvrTxJkA==",
+  "dgSpecHash": "pE103M7gQD97bnCfDVPl8cxfkGqHlZR2DLp5Ag/C/6NLVzmVIjzBlZJEIk+zh5UW0eWSMzPg/F4b/DdHqy7Vog==",
   "success": true,
   "projectFilePath": "C:\\Users\\van_k\\source\\repos\\AgreementManagement_Test\\AgreementManagement\\AgreementManagement\\AgreementManagement.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\van_k\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
+    "C:\\Users\\van_k\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
     "C:\\Users\\van_k\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\van_k\\.nuget\\packages\\microsoft.aspnet.mvc\\5.2.9\\microsoft.aspnet.mvc.5.2.9.nupkg.sha512",
     "C:\\Users\\van_k\\.nuget\\packages\\microsoft.aspnet.razor\\3.2.9\\microsoft.aspnet.razor.3.2.9.nupkg.sha512",

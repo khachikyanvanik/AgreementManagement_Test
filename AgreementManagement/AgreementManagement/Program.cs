@@ -1,4 +1,6 @@
-using AgreementManagement.Data;
+using AgreementManagement.Extensions;
+using AgreementManagement.Persistance;
+using AgreementManagement.Persistance.Extensions;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
@@ -6,19 +8,27 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
-builder.Services.AddDbContext<ApplicationDbContext>(options =>
+builder.Services.AddDbContext<AgreementManagementDbContext>(options =>
 	options.UseSqlServer(connectionString));
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
 builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
-	.AddEntityFrameworkStores<ApplicationDbContext>();
+	.AddEntityFrameworkStores<AgreementManagementDbContext>();
 builder.Services.AddControllersWithViews();
+
+#region Custom Services
+builder.Services.AddServices();
+builder.Services.AddRepositories();
+#endregion
+
+builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
+	app.UseDeveloperExceptionPage();
 	app.UseMigrationsEndPoint();
 }
 else

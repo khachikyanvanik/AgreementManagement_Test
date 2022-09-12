@@ -44,7 +44,7 @@ namespace AgreementManagement.Controllers
         [HttpGet]
 		public async Task<IActionResult> Create()
 		{
-			return View(new AgreementCreationViewModel
+            return View(new AgreementCreationViewModel
 			{
                 Products = await _productService.GetProductsAsync(),
                 ProductGroups = await _productService.GetProductGroupsAsync()
