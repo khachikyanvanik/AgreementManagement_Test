@@ -15,7 +15,7 @@ namespace AgreementManagement.Domain.Entities
 
 		public string Description { get; set; }
 
-		public string Code { get; set; }
+		public string Number { get; set; }
 
 		public bool IsActive { get; set; }
 

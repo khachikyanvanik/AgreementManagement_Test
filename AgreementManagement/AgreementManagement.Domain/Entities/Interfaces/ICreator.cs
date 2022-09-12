@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace AgreementManagement.Domain.Entities.Interfaces
 {
-	internal interface ICreator
+	public interface ICreator
     {
         public Guid CreatedByUserId { get; set; }
 

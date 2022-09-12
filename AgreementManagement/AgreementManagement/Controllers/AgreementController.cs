@@ -1,20 +1,29 @@
-﻿using AgreementManagement.Models;
+﻿using AgreementManagement.Interfaces.Services;
+using AgreementManagement.Models;
 using Microsoft.AspNetCore.Mvc;
-using System.Diagnostics;
 
 namespace AgreementManagement.Controllers
 {
 	public class AgreementController : BaseController
 	{
-		public AgreementController(ILogger<AgreementController> logger)
+        public readonly IAgreementService _agreementService;
+        public readonly IProductService _productService;
+
+        public AgreementController(
+            IAgreementService agreementService,
+            IProductService productService,
+            ILogger<AgreementController> logger)
 			: base(logger)
 		{
-		}
+            _agreementService = agreementService;
+            _productService = productService;
+        }
 
 		public IActionResult Index()
 		{
+            //TODO: log requests in miidleware
 			return View();
-		}
+        }
 
 		public async Task<IActionResult> GetDetails(int? id)
 		{
@@ -23,13 +32,23 @@ namespace AgreementManagement.Controllers
 				return NotFound();
 			}
 
-			return View(null);
-		}
+            var agreement = await _agreementService.GetAgreementAsync<AgreementViewModel>(id.Value);
+			if (agreement != null)
+			{
+                return View(agreement);
+            }
 
-		[HttpGet]
+            return NotFound();
+        }
+
+        [HttpGet]
 		public async Task<IActionResult> Create()
 		{
-			return View(new AgreementCreationViewModel());
+			return View(new AgreementCreationViewModel
+			{
+                Products = await _productService.GetProductsAsync(),
+                ProductGroups = await _productService.GetProductGroupsAsync()
+			});
 		}
 
 		[HttpPost]
@@ -38,8 +57,7 @@ namespace AgreementManagement.Controllers
 			if (ModelState.IsValid)
 			{
 				var currentUserId = GetUserId();
-                // TODO: set creator
-
+                await _agreementService.CreateAgreementAsync(currentUserId, model);
 				return RedirectToAction(nameof(Index));
 			}
 
@@ -52,21 +70,53 @@ namespace AgreementManagement.Controllers
             if (id == null)
             {
                 return NotFound();
+			}
+
+			var agreement = await _agreementService.GetAgreementAsync<AgreementUpdateViewModel>(id.Value);
+			if (agreement == null)
+			{
+                return NotFound();
             }
 
-            return View(null);
+            agreement.Products = await _productService.GetProductsAsync();
+            agreement.ProductGroups = await _productService.GetProductGroupsAsync();
+            return View(agreement);
         }
 
         [HttpPost]
-        public async Task<IActionResult> Edit(int id, AgreementUpdateViewModel model)
+        public async Task<IActionResult> Edit(int? id, AgreementUpdateViewModel model)
         {
-            return View(null);
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var agreement = await _agreementService.GetAgreementAsync<AgreementUpdateViewModel>(id.Value);
+            if (agreement == null)
+            {
+                return NotFound();
+            }
+
+            if (ModelState.IsValid)
+            {
+				var currentUserId = GetUserId();
+                await _agreementService.UpdateAgreementAsync(currentUserId, model);
+                return RedirectToAction(nameof(Index));
+            }
+
+            return View(model);
         }
 
         [HttpGet]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
+            {
+                return NotFound();
+            }
+
+            var agreement = await _agreementService.GetAgreementAsync<AgreementDeleteViewModel>(id.Value);
+            if (agreement == null)
             {
                 return NotFound();
             }
@@ -83,7 +133,24 @@ namespace AgreementManagement.Controllers
         [HttpPost]
         public async Task<JsonResult> GetAgreements()
         {
-            return Json(null);
+            var criteria = new DataTableCriteria<AgreementViewModel>()
+            {
+                Draw = Convert.ToInt32(Request.Form["draw"].First()),
+                Length = Convert.ToInt32(Request.Form["length"].First()),
+                SearchingValue = Request.Form["search[value]"].FirstOrDefault(),
+                SortingDirection = Request.Form["order[0][dir]"].FirstOrDefault(),
+                Start = Convert.ToInt32(Request.Form["start"].First())
+            };
+
+            var agreements = await _agreementService.GetAgreementListAsync(criteria);
+
+            return Json(new
+            {
+                draw = agreements.Draw,
+                data = agreements.Data,
+                recordsFiltered = agreements.RecordsTotalCount,
+                recordsTotal = agreements.RecordsTotalCount
+            });
         }
     }
 }

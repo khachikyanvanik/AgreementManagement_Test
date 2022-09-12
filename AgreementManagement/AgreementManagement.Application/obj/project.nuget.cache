@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "dyTCtX/ikqG5EUzJbkJJTzjLMFT+Bz3EPOCxBQVfXX8JhN+OGQC7ouYawN/x0FWgbYP7/q1ciKOQLtFp+oES0g==",
+  "dgSpecHash": "ukx8YYU28LJDiCholW90tjJHnlswu18guqjalJniTX4tFzXM5CoTxcgLT6Q2tnWeN+ufTr6SAAKCgN5NJ0wHAA==",
   "success": true,
   "projectFilePath": "C:\\Users\\van_k\\source\\repos\\AgreementManagement_Test\\AgreementManagement\\AgreementManagement.Application\\AgreementManagement.Application.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\van_k\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
     "C:\\Users\\van_k\\.nuget\\packages\\microsoft.aspnetcore.authentication\\2.2.0\\microsoft.aspnetcore.authentication.2.2.0.nupkg.sha512",
     "C:\\Users\\van_k\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\van_k\\.nuget\\packages\\microsoft.aspnetcore.authentication.cookies\\2.2.0\\microsoft.aspnetcore.authentication.cookies.2.2.0.nupkg.sha512",
@@ -20,6 +21,7 @@
     "C:\\Users\\van_k\\.nuget\\packages\\microsoft.aspnetcore.http.features\\2.2.0\\microsoft.aspnetcore.http.features.2.2.0.nupkg.sha512",
     "C:\\Users\\van_k\\.nuget\\packages\\microsoft.aspnetcore.identity\\2.2.0\\microsoft.aspnetcore.identity.2.2.0.nupkg.sha512",
     "C:\\Users\\van_k\\.nuget\\packages\\microsoft.aspnetcore.webutilities\\2.2.0\\microsoft.aspnetcore.webutilities.2.2.0.nupkg.sha512",
+    "C:\\Users\\van_k\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\van_k\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.7\\microsoft.entityframeworkcore.6.0.7.nupkg.sha512",
     "C:\\Users\\van_k\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\6.0.7\\microsoft.entityframeworkcore.abstractions.6.0.7.nupkg.sha512",
     "C:\\Users\\van_k\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\6.0.7\\microsoft.entityframeworkcore.analyzers.6.0.7.nupkg.sha512",

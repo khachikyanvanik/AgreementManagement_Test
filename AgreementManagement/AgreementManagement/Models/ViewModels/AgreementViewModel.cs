@@ -14,7 +14,7 @@ namespace AgreementManagement.Models
 
 		public string ProductGroupCode { get; set; }
 
-		public decimal ProductNumber { get; set; }
+		public string ProductNumber { get; set; }
 
 		public DateTime EffectiveDate { get; set; }
 

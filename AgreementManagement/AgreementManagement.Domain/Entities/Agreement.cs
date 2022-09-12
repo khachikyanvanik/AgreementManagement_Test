@@ -17,13 +17,13 @@ namespace AgreementManagement.Domain.Entities
 
 		public decimal ProductPrice { get; set; }
 
-		public Product Product { get; set; }
-
 		public Guid CreatedByUserId { get; set; }
 
 		public DateTime CreateDate { get; set; }
 
 		public bool IsDeleted { get; set; }
+
+		public Product Product { get; set; }
 
 		public ApplicationUser User { get; set; }
 	}

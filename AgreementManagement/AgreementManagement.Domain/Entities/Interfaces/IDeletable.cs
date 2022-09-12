@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AgreementManagement.Domain.Entities.Interfaces
 {
-	internal interface IDeletable
+	public interface IDeletable
 	{
 		public bool IsDeleted { get; set; }
 

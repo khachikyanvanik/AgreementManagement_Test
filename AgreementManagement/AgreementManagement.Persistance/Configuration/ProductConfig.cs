@@ -13,7 +13,7 @@ namespace AgreementManagement.Persistance.Configuration
 	{
 		public void Configure(EntityTypeBuilder<Product> builder)
 		{
-			builder.Property(e => e.Code)
+			builder.Property(e => e.Number)
 				.HasMaxLength(100);
 
 			builder.HasOne(e => e.ProductGroup)
@@ -21,7 +21,7 @@ namespace AgreementManagement.Persistance.Configuration
 				.HasForeignKey(e => e.ProductGroupId)
 				.HasConstraintName("FK_ProductGroup_Products");
 
-			builder.HasIndex(i => i.Code).IsUnique();
+			builder.HasIndex(i => i.Number).IsUnique();
 		}
 	}
 }

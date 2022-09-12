@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "EU+K1ahQzWiVwFLsSdswWHl8wh8yCm6VzMD7EH0A8B9MXyMrFsHSmhozvS+JAoJtsYJguUiENA3OR0P5It+3DQ==",
+  "dgSpecHash": "KIlNwY5w4xutKABlCyQLcECI+3DdviQIKeD71OlgBK//pIbBZf5S/cFF6bRQo6eiho1tsCaeLfBPq76+b47qmw==",
   "success": true,
   "projectFilePath": "C:\\Users\\van_k\\source\\repos\\AgreementManagement_Test\\AgreementManagement\\AgreementManagement.Persistance\\AgreementManagement.Persistance.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\van_k\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
     "C:\\Users\\van_k\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\van_k\\.nuget\\packages\\microsoft.aspnetcore.authentication\\2.2.0\\microsoft.aspnetcore.authentication.2.2.0.nupkg.sha512",
     "C:\\Users\\van_k\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",
@@ -22,7 +23,7 @@
     "C:\\Users\\van_k\\.nuget\\packages\\microsoft.aspnetcore.identity\\2.2.0\\microsoft.aspnetcore.identity.2.2.0.nupkg.sha512",
     "C:\\Users\\van_k\\.nuget\\packages\\microsoft.aspnetcore.identity.entityframeworkcore\\6.0.7\\microsoft.aspnetcore.identity.entityframeworkcore.6.0.7.nupkg.sha512",
     "C:\\Users\\van_k\\.nuget\\packages\\microsoft.aspnetcore.webutilities\\2.2.0\\microsoft.aspnetcore.webutilities.2.2.0.nupkg.sha512",
-    "C:\\Users\\van_k\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
+    "C:\\Users\\van_k\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\van_k\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.4\\microsoft.data.sqlclient.2.1.4.nupkg.sha512",
     "C:\\Users\\van_k\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\2.1.1\\microsoft.data.sqlclient.sni.runtime.2.1.1.nupkg.sha512",
     "C:\\Users\\van_k\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.7\\microsoft.entityframeworkcore.6.0.7.nupkg.sha512",
