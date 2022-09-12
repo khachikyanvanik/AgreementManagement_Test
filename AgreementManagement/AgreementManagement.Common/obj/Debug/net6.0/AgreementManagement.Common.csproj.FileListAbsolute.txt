@@ -1,0 +1,12 @@
+C:\Users\van_k\source\repos\AgreementManagement_Test\AgreementManagement\AgreementManagement.Common\bin\Debug\net6.0\AgreementManagement.Common.deps.json
+C:\Users\van_k\source\repos\AgreementManagement_Test\AgreementManagement\AgreementManagement.Common\bin\Debug\net6.0\AgreementManagement.Common.dll
+C:\Users\van_k\source\repos\AgreementManagement_Test\AgreementManagement\AgreementManagement.Common\bin\Debug\net6.0\AgreementManagement.Common.pdb
+C:\Users\van_k\source\repos\AgreementManagement_Test\AgreementManagement\AgreementManagement.Common\obj\Debug\net6.0\AgreementManagement.Common.csproj.AssemblyReference.cache
+C:\Users\van_k\source\repos\AgreementManagement_Test\AgreementManagement\AgreementManagement.Common\obj\Debug\net6.0\AgreementManagement.Common.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\van_k\source\repos\AgreementManagement_Test\AgreementManagement\AgreementManagement.Common\obj\Debug\net6.0\AgreementManagement.Common.AssemblyInfoInputs.cache
+C:\Users\van_k\source\repos\AgreementManagement_Test\AgreementManagement\AgreementManagement.Common\obj\Debug\net6.0\AgreementManagement.Common.AssemblyInfo.cs
+C:\Users\van_k\source\repos\AgreementManagement_Test\AgreementManagement\AgreementManagement.Common\obj\Debug\net6.0\AgreementManagement.Common.csproj.CoreCompileInputs.cache
+C:\Users\van_k\source\repos\AgreementManagement_Test\AgreementManagement\AgreementManagement.Common\obj\Debug\net6.0\AgreementManagement.Common.dll
+C:\Users\van_k\source\repos\AgreementManagement_Test\AgreementManagement\AgreementManagement.Common\obj\Debug\net6.0\refint\AgreementManagement.Common.dll
+C:\Users\van_k\source\repos\AgreementManagement_Test\AgreementManagement\AgreementManagement.Common\obj\Debug\net6.0\AgreementManagement.Common.pdb
+C:\Users\van_k\source\repos\AgreementManagement_Test\AgreementManagement\AgreementManagement.Common\obj\Debug\net6.0\ref\AgreementManagement.Common.dll
