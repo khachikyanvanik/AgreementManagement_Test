@@ -1,0 +1,17 @@
+C:\Users\van_k\source\repos\AgreementManagement_Test\AgreementManagement\AgreementManagement.Application\obj\Debug\net6.0\AgreementManagement.Application.csproj.AssemblyReference.cache
+C:\Users\van_k\source\repos\AgreementManagement_Test\AgreementManagement\AgreementManagement.Application\obj\Debug\net6.0\AgreementManagement.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\van_k\source\repos\AgreementManagement_Test\AgreementManagement\AgreementManagement.Application\obj\Debug\net6.0\AgreementManagement.Application.AssemblyInfoInputs.cache
+C:\Users\van_k\source\repos\AgreementManagement_Test\AgreementManagement\AgreementManagement.Application\obj\Debug\net6.0\AgreementManagement.Application.AssemblyInfo.cs
+C:\Users\van_k\source\repos\AgreementManagement_Test\AgreementManagement\AgreementManagement.Application\obj\Debug\net6.0\AgreementManagement.Application.csproj.CoreCompileInputs.cache
+C:\Users\van_k\source\repos\AgreementManagement_Test\AgreementManagement\AgreementManagement.Application\bin\Debug\net6.0\AgreementManagement.Application.deps.json
+C:\Users\van_k\source\repos\AgreementManagement_Test\AgreementManagement\AgreementManagement.Application\bin\Debug\net6.0\AgreementManagement.Application.dll
+C:\Users\van_k\source\repos\AgreementManagement_Test\AgreementManagement\AgreementManagement.Application\bin\Debug\net6.0\AgreementManagement.Application.pdb
+C:\Users\van_k\source\repos\AgreementManagement_Test\AgreementManagement\AgreementManagement.Application\bin\Debug\net6.0\AgreementManagement.Common.dll
+C:\Users\van_k\source\repos\AgreementManagement_Test\AgreementManagement\AgreementManagement.Application\bin\Debug\net6.0\AgreementManagement.Domain.dll
+C:\Users\van_k\source\repos\AgreementManagement_Test\AgreementManagement\AgreementManagement.Application\bin\Debug\net6.0\AgreementManagement.Domain.pdb
+C:\Users\van_k\source\repos\AgreementManagement_Test\AgreementManagement\AgreementManagement.Application\bin\Debug\net6.0\AgreementManagement.Common.pdb
+C:\Users\van_k\source\repos\AgreementManagement_Test\AgreementManagement\AgreementManagement.Application\obj\Debug\net6.0\AgreementManagement.Application.csproj.CopyComplete
+C:\Users\van_k\source\repos\AgreementManagement_Test\AgreementManagement\AgreementManagement.Application\obj\Debug\net6.0\AgreementManagement.Application.dll
+C:\Users\van_k\source\repos\AgreementManagement_Test\AgreementManagement\AgreementManagement.Application\obj\Debug\net6.0\refint\AgreementManagement.Application.dll
+C:\Users\van_k\source\repos\AgreementManagement_Test\AgreementManagement\AgreementManagement.Application\obj\Debug\net6.0\AgreementManagement.Application.pdb
+C:\Users\van_k\source\repos\AgreementManagement_Test\AgreementManagement\AgreementManagement.Application\obj\Debug\net6.0\ref\AgreementManagement.Application.dll
