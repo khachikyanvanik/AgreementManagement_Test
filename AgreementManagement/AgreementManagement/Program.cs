@@ -1,3 +1,4 @@
+using AgreementManagement.Domain.Entities;
 using AgreementManagement.Extensions;
 using AgreementManagement.Persistance;
 using AgreementManagement.Persistance.Extensions;
@@ -7,13 +8,13 @@ using Microsoft.EntityFrameworkCore;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
-builder.Services.AddDbContext<AgreementManagementDbContext>(options =>
-	options.UseSqlServer(connectionString));
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
-builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
+builder.Services.AddDefaultIdentity<ApplicationUser>(options => options.SignIn.RequireConfirmedAccount = true)
 	.AddEntityFrameworkStores<AgreementManagementDbContext>();
+
+builder.Services.AddDbContext(builder.Configuration.GetConnectionString("DefaultConnection"));
+
 builder.Services.AddControllersWithViews();
 
 #region Custom Services

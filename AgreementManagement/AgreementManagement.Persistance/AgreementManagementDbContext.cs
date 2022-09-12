@@ -7,10 +7,11 @@ using System.Linq;
 using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
+using static AgreementManagement.Domain.Entities.ApplicationUser;
 
 namespace AgreementManagement.Persistance
 {
-	public class AgreementManagementDbContext : IdentityDbContext
+	public class AgreementManagementDbContext : IdentityDbContext<ApplicationUser, CustomIdentityRole, Guid>
     {
         public AgreementManagementDbContext()
         {

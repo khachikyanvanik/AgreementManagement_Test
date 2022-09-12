@@ -8,7 +8,8 @@ namespace AgreementManagement.Mapper
 	{
 		public AgreementMappingProfile()
 		{
-            CreateMap<AgreementCreationViewModel, Agreement>();
+            CreateMap<AgreementCreationViewModel, Agreement>()
+                .ForMember(dest => dest.ProductPrice, opt => opt.MapFrom(src => src.NewPrice));
 
             CreateMap<Agreement, AgreementViewModel>()
                 .ForMember(dest => dest.Username, opt => opt.MapFrom(src => src.User.UserName))
@@ -18,9 +19,11 @@ namespace AgreementManagement.Mapper
                 .ForMember(dest => dest.ProductNewPrice, opt => opt.MapFrom(src => src.ProductPrice));
 
             CreateMap<Agreement, AgreementUpdateViewModel>()
+                .ForMember(dest => dest.NewPrice, opt => opt.MapFrom(src => src.ProductPrice))
                 .ReverseMap();
 
-            CreateMap<Agreement, AgreementDeleteViewModel>();
+            CreateMap<Agreement, AgreementDeleteViewModel>()
+                .ForMember(dest => dest.NewPrice, opt => opt.MapFrom(src => src.ProductPrice));
         }
-	}
+    }
 }

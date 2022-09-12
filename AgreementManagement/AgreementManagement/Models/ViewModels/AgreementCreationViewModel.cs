@@ -24,7 +24,7 @@ namespace AgreementManagement.Models
 		public DateTime ExpireDate { get; set; }
 
 		[Required]
-		public long NewPrice { get; set; }
+		public decimal NewPrice { get; set; }
 
 		[Required]
 		public bool IsActive { get; set; }

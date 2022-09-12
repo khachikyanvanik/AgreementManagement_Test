@@ -17,10 +17,13 @@ namespace AgreementManagement.Models
 		}
 
 		[Required]
-		public int ProductGroupId { get; set; }
+		public long Id { get; set; }
 
 		[Required]
-		public int ProductId { get; set; }
+		public long ProductGroupId { get; set; }
+
+		[Required]
+		public long ProductId { get; set; }
 
 		[Required]
 		public DateTime EffectiveDate { get; set; }
@@ -29,7 +32,7 @@ namespace AgreementManagement.Models
 		public DateTime ExpireDate { get; set; }
 
 		[Required]
-		public long NewPrice { get; set; }
+		public decimal NewPrice { get; set; }
 
 		[Required]
 		public bool IsActive { get; set; }

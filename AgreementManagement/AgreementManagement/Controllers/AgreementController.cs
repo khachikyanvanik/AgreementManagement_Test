@@ -65,7 +65,7 @@ namespace AgreementManagement.Controllers
         }
         
         [HttpGet]
-        public async Task<IActionResult> Edit(int? id)
+        public async Task<IActionResult> Update(int? id)
         {
             if (id == null)
             {
@@ -84,15 +84,9 @@ namespace AgreementManagement.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Edit(int? id, AgreementUpdateViewModel model)
+        public async Task<IActionResult> Update(int? id, AgreementUpdateViewModel model)
         {
             if (id == null)
-            {
-                return NotFound();
-            }
-
-            var agreement = await _agreementService.GetAgreementAsync<AgreementUpdateViewModel>(id.Value);
-            if (agreement == null)
             {
                 return NotFound();
             }
@@ -121,12 +115,14 @@ namespace AgreementManagement.Controllers
                 return NotFound();
             }
 
-            return View(null);
+            return View(agreement);
         }
 
-        [HttpDelete]
-        public async Task<IActionResult> DeleteConfirmed(int id)
+        [HttpPost]
+        public async Task<IActionResult> DeleteConfirmation(int id)
         {
+            await _agreementService.RemoveAgreementAsync(id);
+
             return RedirectToAction(nameof(Index));
         }
 

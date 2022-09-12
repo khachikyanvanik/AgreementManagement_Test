@@ -9,15 +9,18 @@ namespace AgreementManagement.Models
 {
 	public class AgreementDeleteViewModel
 	{
-		public int ProductGroupId { get; set; }
+		[Required]
+		public long Id { get; set; }
 
-		public int ProductId { get; set; }
+		public long ProductGroupId { get; set; }
+
+		public long ProductId { get; set; }
 
 		public DateTime EffectiveDate { get; set; }
 
 		public DateTime ExpireDate { get; set; }
 
-		public long NewPrice { get; set; }
+		public decimal NewPrice { get; set; }
 
 		public bool IsActive { get; set; }
 	}

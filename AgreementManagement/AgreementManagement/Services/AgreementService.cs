@@ -32,7 +32,6 @@ namespace AgreementManagement.Services
 
 			SetCreator(agreement, userId);
 
-			agreement.ProductPrice = currentProduct.Price;
 			await _agreementRepository.AddAsync(agreement);
 		}
 
@@ -49,7 +48,6 @@ namespace AgreementManagement.Services
 
 			SetCreator(agreement, userId);
 
-			agreement.ProductPrice = curremtProduct.Price;
 			await _agreementRepository.UpdateAsync(agreement);
 		}
 
@@ -79,7 +77,7 @@ namespace AgreementManagement.Services
 
 		public async Task<DataTableCriteria<AgreementViewModel>> GetAgreementListAsync(DataTableCriteria<AgreementViewModel> criteria)
 		{
-			var result = _agreementRepository.GetAll();
+			var result = _agreementRepository.GetAll(i => !i.IsDeleted);
 			var query = Mapper.ProjectTo<AgreementViewModel>(result);
 
 			//TODO: move pagination and sorting logic in generic repository and get already filtered data from there
