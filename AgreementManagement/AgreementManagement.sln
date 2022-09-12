@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AgreementManagement.Common"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AgreementManagement.Application", "AgreementManagement.Application\AgreementManagement.Application.csproj", "{DB4F3A7A-9D09-439A-B85E-A5F01CDCCFC8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AgreementManagement.Persistance", "AgreementManagement.Persistance\AgreementManagement.Persistance.csproj", "{8734499A-6116-4935-8B8E-C577F4C6883D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{DB4F3A7A-9D09-439A-B85E-A5F01CDCCFC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DB4F3A7A-9D09-439A-B85E-A5F01CDCCFC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DB4F3A7A-9D09-439A-B85E-A5F01CDCCFC8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8734499A-6116-4935-8B8E-C577F4C6883D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8734499A-6116-4935-8B8E-C577F4C6883D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8734499A-6116-4935-8B8E-C577F4C6883D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8734499A-6116-4935-8B8E-C577F4C6883D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
