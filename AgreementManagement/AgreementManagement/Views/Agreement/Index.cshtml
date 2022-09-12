@@ -1,0 +1,75 @@
+﻿@model IEnumerable<AgreementViewModel>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<p>
+    <a asp-action="Create">New Agreement</a>
+</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>@Html.DisplayNameFor(model => model.Username)</th>
+            <th>@Html.DisplayNameFor(model => model.ProductGroupCode)</th>
+            <th>@Html.DisplayNameFor(model => model.ProductNumber)</th>
+            <th>@Html.DisplayNameFor(model => model.EffectiveDate)</th>
+            <th>@Html.DisplayNameFor(model => model.ExpireDate)</th>
+            <th>@Html.DisplayNameFor(model => model.ProductPrice)</th>
+            <th>@Html.DisplayNameFor(model => model.ProductNewPrice)</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+    </tbody>
+</table>
+
+@section Scripts {
+<script>
+    $(document).ready(function () {
+        $('.table').DataTable({
+                "filter": true,
+                "serverSide": true,
+                "orderMulti": false,
+                "pageLength": 20,
+                "processing": true,
+                "ajax": {
+                    "url": "/Agreements/GetAgreements",
+                    "type": "POST",
+                    "datatype": "json"
+                },
+                "columnDefs":
+                [{ targets: [7], orderable: false },
+                 { targets: '_all', orderable: true }],
+                "columns": [
+                      { "data": "username",  "name": "Username", "autoWidth": true },
+                      {
+                          "render": function (data, type, full, meta)
+                          { 
+                              return '<span data-toggle="tooltip" title="' + full.productGroupDescrption + '">' + full.productGroupCode + '</span>';
+                          }
+                      },
+                      {
+                          "render": function (data, type, full, meta)
+                          { 
+                              return '<span data-toggle="tooltip" title="' + full.productDescrption + '">' + full.productNumber + '</span>';
+                          }
+                      },
+                      { "data": "effectiveDate",  "name": "EffectiveDate", "autoWidth": true },
+                      { "data": "expireDate", "name": "ExpireDate", "autoWidth": true },
+                      { "data": "productPrice",   "name": "ProductPrice", "autoWidth": true },
+                      { "data": "productNewPrice", "name": "NewPrice", "autoWidth": true },
+                      {
+                          "render": function (data, type, full, meta)
+                          { 
+                              return '<a class="btn btn-info" href="/Agreements/Edit/' + full.id + '">Edit</a>' +
+                                     '<a class="btn btn-danger" href="/Agreements/Delete/' + full.id + '">Delete</a>';
+                          }
+                      },
+                ]
+
+            });
+    });
+</script>
+}
