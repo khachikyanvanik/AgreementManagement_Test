@@ -17,3 +17,5 @@ C:\Users\van_k\source\repos\AgreementManagement_Test\AgreementManagement\Agreeme
 C:\Users\van_k\source\repos\AgreementManagement_Test\AgreementManagement\AgreementManagement.Persistance\obj\Debug\net6.0\AgreementManagement.Persistance.pdb
 C:\Users\van_k\source\repos\AgreementManagement_Test\AgreementManagement\AgreementManagement.Persistance\obj\Debug\net6.0\AgreementManagement.Persistance.genruntimeconfig.cache
 C:\Users\van_k\source\repos\AgreementManagement_Test\AgreementManagement\AgreementManagement.Persistance\obj\Debug\net6.0\ref\AgreementManagement.Persistance.dll
+C:\Users\van_k\source\repos\AgreementManagement_Test\AgreementManagement\AgreementManagement.Persistance\bin\Debug\net6.0\AgreementManagement.Application.dll
+C:\Users\van_k\source\repos\AgreementManagement_Test\AgreementManagement\AgreementManagement.Persistance\bin\Debug\net6.0\AgreementManagement.Application.pdb

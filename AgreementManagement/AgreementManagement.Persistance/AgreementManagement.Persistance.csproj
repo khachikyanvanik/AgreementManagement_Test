@@ -17,6 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\AgreementManagement.Application\AgreementManagement.Application.csproj" />
     <ProjectReference Include="..\AgreementManagement.Domain\AgreementManagement.Domain.csproj" />
   </ItemGroup>
 

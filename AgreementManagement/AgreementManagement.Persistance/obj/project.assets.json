@@ -1007,6 +1007,20 @@
           }
         }
       },
+      "AgreementManagement.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "AgreementManagement.Domain": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "6.0.7"
+        },
+        "compile": {
+          "bin/placeholder/AgreementManagement.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/AgreementManagement.Application.dll": {}
+        }
+      },
       "AgreementManagement.Common/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -2692,6 +2706,11 @@
         "version.txt"
       ]
     },
+    "AgreementManagement.Application/1.0.0": {
+      "type": "project",
+      "path": "../AgreementManagement.Application/AgreementManagement.Application.csproj",
+      "msbuildProject": "../AgreementManagement.Application/AgreementManagement.Application.csproj"
+    },
     "AgreementManagement.Common/1.0.0": {
       "type": "project",
       "path": "../AgreementManagement.Common/AgreementManagement.Common.csproj",
@@ -2705,6 +2724,7 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "AgreementManagement.Application >= 1.0.0",
       "AgreementManagement.Domain >= 1.0.0",
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 6.0.7",
       "Microsoft.EntityFrameworkCore >= 6.0.7",
@@ -2739,6 +2759,9 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
+            "C:\\Users\\van_k\\source\\repos\\AgreementManagement_Test\\AgreementManagement\\AgreementManagement.Application\\AgreementManagement.Application.csproj": {
+              "projectPath": "C:\\Users\\van_k\\source\\repos\\AgreementManagement_Test\\AgreementManagement\\AgreementManagement.Application\\AgreementManagement.Application.csproj"
+            },
             "C:\\Users\\van_k\\source\\repos\\AgreementManagement_Test\\AgreementManagement\\AgreementManagement.Domain\\AgreementManagement.Domain.csproj": {
               "projectPath": "C:\\Users\\van_k\\source\\repos\\AgreementManagement_Test\\AgreementManagement\\AgreementManagement.Domain\\AgreementManagement.Domain.csproj"
             }
